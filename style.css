@@ -6,12 +6,17 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    background-color: #000000;
 }
+
+html{
+    scroll-behavior: smooth;
+  }
 
 /* cabeça */
 
 header{
-    background-color: rgba(0, 0, 0, 0.836);
+    background-color: rgba(19, 19, 19, 0.726);
     height: 100px;
     width: 100vw;
 }
@@ -28,19 +33,28 @@ ul{
 
 }
 
-ul > a{
+ul > li> a{
+
     text-decoration: none;
-    margin: 30px 20px;
-    color: rgba(255, 255, 255, 0.692);
+    color: rgba(255, 255, 255, 0.253);
     font-size: large;
 
 }
 
-ul>a:hover{
-    color: white;
+ li:hover{
     transform: scale(1.12);
     text-shadow: 1px 2px 2px black;
+    cursor:default;
 }
+a:hover{
+    color: white;
+}
+li{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
 
 #nome{
     margin: 30px 0px 0px 0px;
@@ -113,15 +127,27 @@ iframe{
 /* projetos */
 .projetos{
     background: linear-gradient( #000000, #1f1e1e);
-    height: 100vh;
+    height: 110vh;
 }
 
-#projetos{
+#projetosH1{
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 3em;
+    margin-top: 50px;
 }
 
 .container_projetos{
-    margin-top: 50px;
+    margin-top: 8%;
+}
+
+.alinhamento{
+    display: flex;
+    justify-content: space-around;
+}
+
+#sobre_projetos{
+    color: white;
+    margin-top: 5px;
+    font-size: medium;
 }
